@@ -1,4 +1,7 @@
 body {
   padding: 10px;
   font-family: sans-serif;
+  background-image: url("/imgs/forest.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
