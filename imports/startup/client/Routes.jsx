@@ -6,10 +6,14 @@ import Home from "../../ui/pages/Home";
 import MainDst from "../../ui/pages/dst/Maindst";
 import NotFound from "../../ui/pages/NotFound";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ThemeProvider from "@mui/material/styles/ThemeProvider";
+import { theme } from "../../ui/theme";
+import CssBaseline from "@mui/material/CssBaseline";
 
 const AppRoutes = () => {
   return (
-    <>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
       <Router>
         <Navbar />
         <Routes>
@@ -19,7 +23,7 @@ const AppRoutes = () => {
         </Routes>
       </Router>
       <Footer />
-    </>
+    </ThemeProvider>
   );
 };
 
